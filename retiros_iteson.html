@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#246bff">
 <meta name="color-scheme" content="light">
-<title>Itenson · Si el cliente tiene 3 adeudos retira</title>
+<title>Iteson · Si el cliente tiene 3 adeudos retira</title>
 <link rel="preconnect" href="https://script.google.com" crossorigin>
 <link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin>
 
@@ -405,7 +405,7 @@ body.cols-open{ overflow:hidden; }
 }
 .switch input:checked + .slider:before{ transform: translateX(22px); }
 
-/* ========================= Splash Screen (Itenson) ========================= */
+/* ========================= Splash Screen (Iteson) ========================= */
 .splash{
   position:fixed;
   inset:0;
@@ -653,14 +653,14 @@ body.cols-open{ overflow:hidden; }
 <body>
 
 <!-- Splash -->
-<div class="splash" id="splash" aria-label="Cargando Itenson" aria-busy="true">
+<div class="splash" id="splash" aria-label="Cargando Iteson" aria-busy="true">
   <div class="splash-card" role="status" aria-live="polite">
     <div class="splash-logo" aria-hidden="true">
       <img class="logo-img" alt=""
-        src="https://raw.githubusercontent.com/Itenson/Itenson/refs/heads/main/Itenson_logo_transparent.png"
+        src="https://raw.githubusercontent.com/Iteson/Iteson/refs/heads/main/Iteson_logo_transparent.png"
         width="58" height="58" decoding="async" fetchpriority="high" />
     </div>
-    <div class="splash-title">Itenson</div>
+    <div class="splash-title">Iteson</div>
     <p class="splash-sub">Si el cliente tiene 3 adeudos retira</p>
     <div class="splash-bar" aria-hidden="true"><i></i></div>
     <p class="sr-only">Cargando…</p>
@@ -835,7 +835,7 @@ const WHOAMI = {
   name: "Jair Elizondo",
   phonePretty: "322 243 9782",
   phoneDigits: "3222439782",
-  role: "Soporte / Instalaciones · Itenson",
+  role: "Soporte / Instalaciones · Iteson",
   hint: "#whoami",
   webHint: "Escribe #whoami al final de la URL"
 };
@@ -844,7 +844,7 @@ const WHOAMI = {
   try{
     const line = "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━";
     console.log("%c" + line, "color:#18c6ff;font-weight:900");
-    console.log("%cItenson · Firma de desarrollo","color:#246bff;font-size:14px;font-weight:900");
+    console.log("%cIteson · Firma de desarrollo","color:#246bff;font-size:14px;font-weight:900");
     console.log("%c" + WHOAMI.name + "  ·  " + WHOAMI.phonePretty + "  ·  " + WHOAMI.hint,"color:#7c3aed;font-size:12px;font-weight:900");
     console.log("%c" + WHOAMI.webHint, "color:#5b6b86;font-size:12px;font-weight:800");
     console.log("%c" + line, "color:#18c6ff;font-weight:900");
@@ -880,7 +880,7 @@ function renderWhoami(){
 
   const waLink =
     `https://api.whatsapp.com/send?phone=52${WHOAMI.phoneDigits}` +
-    `&text=${encodeURIComponent("Hola 👋 " + WHOAMI.name + ", necesito soporte / info de Itenson.")}` +
+    `&text=${encodeURIComponent("Hola 👋 " + WHOAMI.name + ", necesito soporte / info de Iteson.")}` +
     `&type=phone_number&app_absent=0`;
 
   document.getElementById("whoWhatsBtn").setAttribute("href", waLink);
@@ -890,7 +890,7 @@ function renderWhoami(){
     const text =
       `${WHOAMI.name}\n` +
       `${WHOAMI.phonePretty}\n` +
-      `Itenson\n` +
+      `Iteson\n` +
       `Tip: ${location.origin + location.pathname}#whoami`;
 
     try{
@@ -1003,7 +1003,7 @@ const ALWAYS_COLS = [
   "Comentario"
 ];
 
-const STORAGE_KEY = "Itenson_retiros_cols_instant_v1";
+const STORAGE_KEY = "Iteson_retiros_cols_instant_v1";
 let EXTRA_COLS = [];
 let visibleCols = ALWAYS_COLS.slice();
 
